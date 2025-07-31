@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Glizzywood</title>
+    <link rel="icon" href="../Ressources/favicon.ico">
+
+    <link rel="stylesheet" href="../static/homepage.css">
+    <script src="js/dark-mode.js"></script>
+
+    
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <img src="../Ressources/menu_deroulant.png" id="parametres">
+        <a id="logosite" href="homepage.html">
+            <img src="../Ressources/logosite.png">
+            <h1>Glizzywood</h1>
+        </a>
+        <div id="joueur">
+            <img src="../Ressources/blank_profile_picture.png" class="image_ronde" id="profil">
+        </div>
+    </header>
+    <section>
+        <div id="recherche_lobby">
+            <h2>Rejoindre un lobby</h2>
+            <div id="recherche">
+                <input id="searchbar" placeholder="Entrez un code..." type="text" maxlength="4" oninput="this.value = this.value.replace(/[^0-9]/g, '')"></input>
+                <img onclick="chercherpartie(code)" src="../Ressources/button_arrow.png" class='arrow_button' id="go">
+            </div>
+        </div>
+        <table>
+            <tr id="listejeu">
+                <a href="./loup-garou.html"><td class="jeu" id="jeu1">
+                    <label class="label-jeu">Loup-Garou</label>
+                    <label class="label-joueur">(8+ joueurs)</label>
+                </td></a>
+                <td class="jeu" id="jeu2">
+                    <label class="label-jeu">Blood On The Clocktower</label>
+                    <label class="label-joueur">(5-20 joueurs)</label>
+                </td>
+                <td class="jeu" id="jeu3">
+                    <label class="label-jeu">Secret Hitler</label>
+                    <label class="label-joueur">(5-10 joueurs)</label>
+                </td>
+            </tr>
+            <tr id="listejeu">
+                <td class="jeu" id="jeu4">
+                    <label class="label-jeu">Loup-Garou</label>
+                </td>
+                <td class="jeu" id="jeu5">
+                    <label class="label-jeu">Blood On The Clocktower</label>
+                </td>
+                <td class="jeu" id="jeu6">
+                    <label class="label-jeu">Secret Hitler</label>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <span> Glizzywood © - 2025 </span>
+        <div id="reseaux">
+            <a href="https://discord.gg/tujWdUgBBu" target="_blank"> 
+                <p>Discord</p>
+                <img src="../Ressources/discord.png" class="image_ronde" id="ppdiscord"> 
+            </a>
+        </div>
+    </footer>
+    <script src="../static/scripthp.js"></script>
+</body>
+</html>
